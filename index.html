@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="김코드의 포트폴리오와 자기소개">
+  <title>김코드 | 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="top-bar">
+    <a class="logo" href="index.html">김코드</a>
+    <button class="menu-button icon-button" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-navigation">
+      <span class="material-symbols-rounded">menu</span>
+    </button>
+    <nav id="main-navigation" class="navigation">
+      <a class="active" href="index.html">소개</a>
+      <a href="activities.html">활동</a>
+      <button class="theme-button icon-button" type="button" aria-label="다크 모드로 전환">
+        <span class="material-symbols-rounded">dark_mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">HELLO, I AM</p>
+        <h1>김코드</h1>
+        <h2>사용하기 좋은 웹을 만드는 개발자</h2>
+        <p class="lead">아이디어를 깔끔하고 반응형인 웹 경험으로 구현합니다. 새로운 기술을 배우고, 사람에게 도움이 되는 결과물을 만드는 것을 좋아합니다.</p>
+        <div class="button-group">
+          <a class="button primary" href="activities.html">활동 보기 <span class="material-symbols-rounded">arrow_forward</span></a>
+          <a class="button secondary" href="mailto:hello@example.com">이메일 보내기</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="avatar" aria-hidden="true">KC</div>
+        <h3>김코드</h3>
+        <p>Seoul, South Korea</p>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>제가 잘하는 일</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card"><span class="material-symbols-rounded card-icon">code</span><h3>웹 개발</h3><p>시맨틱 HTML, 현대적인 CSS, JavaScript로 접근성 높은 반응형 웹사이트를 만듭니다.</p></article>
+        <article class="card"><span class="material-symbols-rounded card-icon">palette</span><h3>UI 디자인</h3><p>깔끔한 레이아웃과 일관된 디자인 시스템으로 자연스러운 사용 경험을 설계합니다.</p></article>
+        <article class="card"><span class="material-symbols-rounded card-icon">lightbulb</span><h3>문제 해결</h3><p>복잡한 문제를 작은 단위로 나누고 실험하며 실용적인 해결책을 찾아갑니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading"><p class="eyebrow">SKILLS</p><h2>사용 기술</h2></div>
+      <div class="chip-list">
+        <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Responsive Design</span><span class="chip">Figma</span><span class="chip">Git</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; <span class="current-year"></span> 김코드</footer>
+</body>
+</html>
