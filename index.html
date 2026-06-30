@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="김코드의 포트폴리오와 자기소개">
-  <title>김코드 | 포트폴리오</title>
+  <meta name="description" content="최성철의 포트폴리오와 자기소개">
+  <title>최성철 | 포트폴리오</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,13 +13,14 @@
 </head>
 <body>
   <header class="top-bar">
-    <a class="logo" href="index.html">김코드</a>
+    <a class="logo" href="index.html">최성철</a>
     <button class="menu-button icon-button" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-navigation">
       <span class="material-symbols-rounded">menu</span>
     </button>
     <nav id="main-navigation" class="navigation">
       <a class="active" href="index.html">소개</a>
       <a href="activities.html">활동</a>
+      <a href="#ai-survey">AI 설문</a>
       <button class="theme-button icon-button" type="button" aria-label="다크 모드로 전환">
         <span class="material-symbols-rounded">dark_mode</span>
       </button>
@@ -30,18 +31,18 @@
     <section class="hero container">
       <div>
         <p class="eyebrow">HELLO, I AM</p>
-        <h1>김코드</h1>
+        <h1>최성철</h1>
         <h2>사용하기 좋은 웹을 만드는 개발자</h2>
         <p class="lead">아이디어를 깔끔하고 반응형인 웹 경험으로 구현합니다. 새로운 기술을 배우고, 사람에게 도움이 되는 결과물을 만드는 것을 좋아합니다.</p>
         <div class="button-group">
           <a class="button primary" href="activities.html">활동 보기 <span class="material-symbols-rounded">arrow_forward</span></a>
-          <a class="button secondary" href="mailto:hello@example.com">이메일 보내기</a>
+          <a class="button secondary" href="mailto:a82343695@gmail.com">이메일 보내기</a>
         </div>
       </div>
       <aside class="profile-card">
-        <div class="avatar" aria-hidden="true">KC</div>
-        <h3>김코드</h3>
-        <p>Seoul, South Korea</p>
+        <div class="avatar" aria-hidden="true">CSC</div>
+        <h3>최성철</h3>
+        <p>Daejeon, South Korea</p>
         <div class="social-links">
           <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
@@ -67,8 +68,45 @@
         <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Responsive Design</span><span class="chip">Figma</span><span class="chip">Git</span>
       </div>
     </section>
+
+    <section id="ai-survey" class="section ai-survey-section">
+      <div class="container ai-survey-layout">
+        <div class="ai-survey-intro">
+          <span class="material-symbols-rounded ai-survey-icon" aria-hidden="true">smart_toy</span>
+          <p class="eyebrow">AI QUESTION SERVICE</p>
+          <h2>AI 에이전트에게<br>질문해 보세요</h2>
+          <p class="lead">궁금한 내용을 남겨주시면 AI 에이전트가 질문을 분석하고, 입력한 이메일로 답변을 보내드립니다.</p>
+        </div>
+
+        <form id="contactForm" class="ai-survey-form">
+          <div class="form-field">
+            <label for="visitorName">이름</label>
+            <input type="text" id="visitorName" name="visitorName" placeholder="이름을 입력하세요" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="visitorEmail">이메일</label>
+            <input type="email" id="visitorEmail" name="visitorEmail" placeholder="example@email.com" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="visitorMessage">질문</label>
+            <textarea id="visitorMessage" name="visitorMessage" placeholder="AI 에이전트에게 할 질문을 입력하세요" rows="6" required></textarea>
+          </div>
+
+          <p class="form-notice"><span class="material-symbols-rounded" aria-hidden="true">info</span> 제출 시 답변 발송을 위해 입력한 정보가 전달됩니다.</p>
+
+          <button class="button primary submit-button" type="submit">
+            <span class="material-symbols-rounded" aria-hidden="true">send</span>
+            <span class="submit-button-text">AI 에이전트에게 질문하기</span>
+          </button>
+
+          <div id="responseMessage" class="response-message" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer>&copy; <span class="current-year"></span> 김코드</footer>
+  <footer>&copy; <span class="current-year"></span> 최성철</footer>
 </body>
 </html>
